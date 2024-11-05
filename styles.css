@@ -1,0 +1,626 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    background-color: white;
+
+    margin-top: -15px;
+
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  
+}
+
+nav {
+    display: flex;
+
+    height: 45px;
+}
+
+
+.logo {
+    height: 175px;
+    width: 230px;
+    margin-top: -58px;
+    margin-left: -20px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+
+    margin-left: -50px;
+}
+
+.navigation {
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.navigation li {
+    height: 28px ;
+}
+
+
+.navigation li:hover {
+    border-bottom: 2px solid black;
+}
+
+li {
+    list-style: none;
+
+    cursor: pointer;
+}
+
+form {
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid rgb(214, 212, 205);
+
+    width: 950px;
+
+    margin: 5px 80px;
+    height: 42px;
+}
+
+.search {
+    position: absolute;
+    left: 604px;
+
+
+
+    padding-top: 8px;
+    z-index: 1;
+}
+
+input {
+    width: 300px;
+
+    font-size: 15px;
+    text-indent: 25px;
+
+    border: 0;
+    outline: none;
+
+
+    margin-top: 12px;
+
+    margin-left: 24px;
+
+}
+
+input::placeholder {
+    text-indent: 25px;
+}
+
+.ext-nav {
+    font-size: 14px;
+
+    margin-top: 4px;
+}
+
+.add-website {
+    background-color: #017c6e;
+    color: white;
+
+    font-weight: bold;
+
+    height: 26px;
+
+    padding: 13px 13px 3px;
+
+    border-style: none;
+    border-radius: 10px;
+
+    margin-top: 4px;
+}
+
+.sign-in {
+    height: 26px;
+
+    padding: 13px 11px 3px;
+
+    border: 1px solid hsla(45, 6%, 86%, .3);
+    border-style: outset;
+    border-radius: 10px;
+
+    margin-top: 4px;
+}
+
+.sign-up {
+    height: 26px;
+
+    padding: 13px 11px 3px;
+
+    border: 1px solid hsla(45, 6%, 86%, .3);
+    border-style: outset;
+    border-radius: 10px;
+
+    margin-top: 4px;
+}
+
+.sub-category {
+    height:76.5px;
+
+    margin-left: 24px;
+    margin-top: -5px;
+}
+
+.sub-category li {
+    height: 26px;
+
+    background-color: white;
+
+    padding: 13px 11px 3px;
+
+    border: 1px solid hsla(45, 6%, 86%, .3);
+    border-style: outset;
+    border-radius: 10px;
+
+    white-space: nowrap;
+
+    margin-top: 4px;
+}
+
+.hero {
+    margin-top: 29px;
+    height: 360px;
+
+    border-radius: 25px;
+    outline: none;
+
+    background-color: #f6f3ef;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.hero-txt h2 {
+    font-size: 35px;
+    font-weight: lighter;
+
+    margin: 0;
+}
+
+.hero-txt p {
+    font-size: 13px;
+   
+}
+
+.moving-cards {
+    display: flex;
+
+    position: relative;
+}
+
+.moving-cards img {
+    height: 200px;
+    width: 130px;
+
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.first-card {
+    position: relative;
+    left: 165px;
+    z-index: 3;
+
+    transform: rotate(20deg);
+
+}
+/* 
+.moving-cards:hover > .first-card {
+    transform: rotate(42deg);
+} */
+
+.second-card {
+    position: relative;
+    z-index: 2;
+
+
+}
+/* 
+.moving-cards:hover > .second-card {
+    transform: rotate(10deg);
+} */
+
+.third-card {
+    position: relative;
+    z-index: 1;
+    right: 165px;
+    transform: rotate(-25deg);
+
+
+}
+/* 
+.moving-cards:hover > .third-card {
+    transform: rotate(-38deg);
+} */
+
+
+.filtr-bar {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 32px;
+}
+
+h3 {
+    color: #191818; 
+
+    font-size: 23px;
+
+    padding-left: 10px;
+}
+
+.filter  {
+    display: flex;
+}
+
+.service-filtr {
+    display: flex;
+
+    height: 50px;
+
+    margin-right: 10px;
+}
+
+.drop-down {
+    height: 17px;
+
+
+    padding: 9px;
+
+
+    border: 1px solid hsla(45, 6%, 86%, .3);
+    border-style: outset;
+    border-radius: 10px;
+
+    margin-left: 10px;
+
+    white-space: nowrap;
+
+}
+
+.drop-down svg, .desktop svg {
+    padding-left: 5px;
+}
+
+.space-line {
+    background-color: #f0efed;
+
+    height: 34px;
+    margin: 0 10px 10px;
+    width: 1px;
+
+  
+}
+
+.user-fltr {
+    display: flex;
+
+    
+    margin-right: 20px;
+
+}
+
+.desktop {
+    height: 17px;
+    width: 90px;
+
+
+    padding: 9px;
+
+
+    border: 1px solid hsla(45, 6%, 86%, .3);
+    border-style: outset;
+    border-radius: 10px;
+
+    margin-left: 10px;
+
+}
+
+.drop-icon {
+    
+    rotate: -90deg;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.picmove {
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 14px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description a {
+    color: #504f4f;
+
+    font-weight: bold;
+}
+
+.description a:hover {
+    color:#017c6e;
+    text-decoration: underline;
+    text-decoration-color: #017c6e;
+}
+
+footer {
+    margin-top: 80px;
+    border-top: 1px solid rgb(233, 227, 227)
+}
+
+.logo-container {
+    margin-top: 60px;
+    margin-left: 32px;
+}
+
+.logo-container .logo {
+    height: 170px;
+    width: 230px;
+
+    object-fit: cover;
+}
+
+.paragraph-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1400px;
+
+    margin-left: 45px;
+
+    position: relative;
+    bottom: 50px
+
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3  {
+    font-size: 14px;
+ 
+    color: #62615f;
+}
+
+
+
+.paragraph-1 svg {
+    height: 20px;
+    width: 20px;
+
+    margin-top: 10px;
+    margin-right: 15px;
+
+    cursor: pointer;
+}
+
+.paragraph-2 ul, .paragraph-3 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph-2 ul :hover, .paragraph-3 ul :hover {
+   color:#017c6e;
+   text-decoration: underline;
+   text-decoration-color: #017c6e;
+}
+
+footer img {
+    height: 328px;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.header-small {
+    display: none;
+}
+
+
+@media(max-width: 400px) {
+    
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+
+    
+    header {
+        display: none;
+    }
+
+    .logo {
+        object-fit: cover;
+
+        height: 100px;
+
+        margin-top: -25px;
+    }
+
+    form {
+        display: none;
+    }
+
+    .add-website, .sign-up {
+        display: none;
+    }
+
+    .header-small {
+        height: 170px;
+
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+
+        height: 150px;
+
+        position: fixed;
+        top: 0;
+        z-index: 5;
+
+        padding-top: 5px;
+        padding-bottom: 10px;
+
+        background-color: white;
+
+    }
+
+    .logo-sign-in {
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-right: 15px;
+    }
+
+    .navigation {
+        margin-top: -10px;
+        margin-left: -20px;
+
+        
+    }
+
+    .navigation li {
+        font-size: 17px;
+    }
+    
+    .sub-category {
+        height: auto;
+
+        margin-left: -370px;
+        margin-top: 25px;
+        margin-bottom: -50px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        white-space: nowrap;
+
+    }
+
+    .sub-category::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sub-category li {
+        display: inline-block;
+        font-size: 15px;
+
+        
+    }
+
+    .hero {
+        height: 570px;
+        flex-direction: column-reverse;
+
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 165px;
+
+
+    }
+
+    .moving-cards {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .hero-txt {
+        width: 240px;
+
+        text-align: justify;
+    }
+
+    .filtr-bar {
+        flex-direction: column;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    .filter {
+        overflow-x: auto;
+        overflow-y: hidden;
+    
+    }
+
+    .filter::-webkit-scrollbar {
+        display: none;
+    }
+
+    article {
+        flex-direction: column;
+
+        margin-left: 13px;
+    }
+
+    section {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .logo-container {
+        margin-top: 30px;
+        margin-left: 18px;
+    }
+
+    .logo-container .logo {
+        height: 135px;
+    }
+
+    .paragraph-container {
+        flex-direction: column;
+    }
+
+    .paragraph-1 {
+        width: 300px;
+        margin-left: -10px;
+    }
+
+    .bottom-ing {
+        display: none;
+        
+    }
+}
